@@ -24,6 +24,7 @@ jobs:
   job2:
     name: segundo fluxo
     runs-on: ubunto-latest
+    needs: job1 
     steps: 
       - name: Passo4
         run: echo "rodando o quarto passo do deploy."
